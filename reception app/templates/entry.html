@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/registration'>
+<table>
+<p>Use this form to log a resident :</p>
+<tr><td>Name:</td><td><input name='name' type='TEXT'></td></tr>
+<tr><td>Sex:</td><td><input name='sex' type='TEXT'></td></tr>
+<tr><td>Age:</td><td><input name='age' type='TEXT'></td></tr>
+<tr><td>Room:</td><td><input name='room' type='TEXT'></td></tr>
+<tr><td>Phone:</td><td><input name='phone' type='TEXT'></td></tr>
+</table>
+<p>When you're ready, click this button:</p>
+<p><input value='Next' type='SUBMIT'></p>
+</form>
+
+{% endblock %}

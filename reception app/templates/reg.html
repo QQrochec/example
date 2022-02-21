@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='GET' action='/'>
+<p>Information about resident:</p>
+<table>
+<tr><td>Name:</td><td>{{the_name}}</td></tr>
+<tr><td>Sex:</td><td>{{the_sex}}</td></tr>
+<tr><td>Age:</td><td>{{the_age}}</td></tr>
+<tr><td>Room:</td><td>{{the_room}}</td></tr>
+<tr><td>Phone:</td><td>{{the_phone}}</td></tr>
+</table>
+
+<p>Registration successful</p>
+</table>
+<p><input value='Main page' type='SUBMIT'>
+</form>
+{% endblock %}
